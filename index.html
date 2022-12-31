@@ -11,6 +11,13 @@
     <source src="GHPIANO.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
   </audio>
+  <script>
+    document.addEventListener('click', musicPlay);
+function musicPlay() {
+document.getElementById('f').play();
+document.removeEventListener('click', musicPlay);
+}
+     </script>
   <div class="night"></div>
   <div class="flowers">
     <div class="flower flower--1">
